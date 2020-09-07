@@ -219,4 +219,12 @@ class BiCrossCircleView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+        fun create(activity : Activity) : BiCrossCircleView {
+            val view : BiCrossCircleView = BiCrossCircleView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
